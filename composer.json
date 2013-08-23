@@ -1,0 +1,9 @@
+{
+    "name": "raulfraile/ladybug-helpers",
+    "description": "Helpers for ladybug",
+    "keywords": ["ladybug", "theme"],
+    "license": "MIT",
+    "require": {
+        
+    }
+}
