@@ -4,6 +4,9 @@
     "keywords": ["ladybug", "theme"],
     "license": "MIT",
     "require": {
-        
-    }
+
+    },
+    "autoload": {
+        "files": ["helpers.php"]
+    },
 }
