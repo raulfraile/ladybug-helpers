@@ -8,5 +8,5 @@
     },
     "autoload": {
         "files": ["helpers.php"]
-    },
+    }
 }
