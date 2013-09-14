@@ -1,6 +1,7 @@
 {
     "name": "raulfraile/ladybug-helpers",
     "description": "Helpers for ladybug",
+    "version": "1.0.0-beta1",
     "keywords": ["ladybug", "theme"],
     "license": "MIT",
     "require": {
