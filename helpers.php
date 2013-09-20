@@ -41,12 +41,6 @@ function ladybug_set_options(array $options)
     }
 }
 
-function ladybug_register_plugin($plugin)
-{
-    $ladybug = getLadybug();
-    $ladybug->registerPlugin($plugin);
-}
-
 function ladybug_dump(/*$var1 [, $var2...$varN]*/)
 {
     $ladybug = getLadybug();
