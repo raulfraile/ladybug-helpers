@@ -72,6 +72,13 @@ function ladybug_dump_class_die(/*$var1 [, $var2...$varN]*/)
     die(1);
 }
 
+function ladybug_dump_return(/*$var1 [, $var2...$varN]*/)
+{
+    $ladybug = getLadybug();
+
+    return call_user_func_array(array($ladybug,'dump'), func_get_args());
+}
+
 // Shortcuts
 if (!function_exists('ld')) {
     function ld(/*$var1 [, $var2...$varN]*/)
@@ -101,6 +108,13 @@ if (!function_exists('ldcd')) {
     }
 }
 
+if (!function_exists('ldr')) {
+    function ldr(/*$var1 [, $var2...$varN]*/)
+    {
+        return call_user_func_array('ladybug_dump_return', func_get_args());
+    }
+}
+
 // register helpers
 $ladybug = getLadybug();
 $ladybug->registerHelper('ladybug_set_theme', false);
@@ -115,3 +129,4 @@ $ladybug->registerHelper('ld', true);
 $ladybug->registerHelper('ldd', true);
 $ladybug->registerHelper('ldc', true);
 $ladybug->registerHelper('ldcd', true);
+$ladybug->registerHelper('ldr', true);
